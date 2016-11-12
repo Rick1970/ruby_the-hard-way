@@ -121,7 +121,24 @@ print "How tall are you?"
 height = gets.chomp
 print "How old are you?"
 age = gets.chomp
-
 puts "You are #{name}.  You are #{height} tall.  You are #{age} years old."
+
+print "Give me a number."
+number = gets.chomp.to_i
+bigger = number * 5
+puts "A bigger number is #{bigger}."
+print "Give me another number."
+second_number = gets.chomp.to_i
+smaller = second_number / 5
+puts "A smaller number is #{smaller}."
+print "Lets figure out your tax amount.  Enter the amount."
+amount = gets.chomp.to_f
+tax_rate = 0.098.to_f
+tax_amount = amount * tax_rate
+puts "Your tax on #{amount} is #{tax_amount} at a tax rate of #{tax_rate} percent."
+
+
+
+
 
 
