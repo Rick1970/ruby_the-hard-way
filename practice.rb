@@ -137,6 +137,85 @@ tax_rate = 0.098.to_f
 tax_amount = amount * tax_rate
 puts "Your tax on #{amount} is #{tax_amount} at a tax rate of #{tax_rate} percent."
 
+first, second, third = ARGV
+
+puts "Your first vatiable is: #{first}."
+puts "Your second variable is: #{second}."
+puts "Your third variable is: #{third}."
+
+def prints_two(*args)
+    arg1, arg2 = args
+    puts "arg1 #{arg1}, and arg2 #{arg2}"
+end     
+
+def print_two_again(arg1, arg2)
+    puts "arg1 #{arg1}, and arg2 #{arg2}."
+end 
+
+def prints_one(args1)
+    print "args1 #{args1}"
+end 
+
+def print_none()
+    puts "I got nothing."
+end    
+
+test = prints_one(7)
+puts test
+
+def cheese_and_crackers(cheese_count, boxes_of_crackers)
+    puts "You have #{boxes_of_crackers} boxes of crackers."
+    puts "You have #{cheese_count} cheeses."
+    puts "That is enough for a party."
+    puts "Get a blanket\n"
+end
+
+puts "We can just give the function numbers directly."
+cheese_and_crackers(5, 5)
+
+puts "Or we can use variables from the script"
+
+crackers = 5
+cheese = 5
+
+cheese_and_crackers(cheese, crackers)
+
+puts "We can even do math inside."
+
+cheese_and_crackers(25 + 5, 38 - 7)
+
+puts "And we can combine the two."
+
+cheese_and_crackers(cheese + 1000, crackers + 750)
+
+
+
+def get_area(height, width)
+    return height * width
+end
+
+get_area(5, 7)
+
+height = 5
+width = 7
+
+mark = get_area(height, width)
+puts mark
+
+steve = get_area(get_area(7, 5), get_area(8, 4))
+puts steve
+
+result = get_area(9, 4)
+
+result2 = get_area(8, 5)
+
+dave = get_area(result, result2)
+puts dave
+bob = get_area(result, width)
+puts bob
+
+
+    
 
 
 
